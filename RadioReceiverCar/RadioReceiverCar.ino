@@ -169,7 +169,7 @@ void Lspd(int spd)
     else //Stop..
     {
       ledcWrite(PWM_L, 0);
-      digitalWrite(DIR_L,LOW);
+      digitalWrite(DIR_L,LOW); //DOES NOT MATTER
     }
   }
 
@@ -189,7 +189,7 @@ void Lspd(int spd)
     else
     {
       ledcWrite(PWM_L, 0);
-      digitalWrite(DIR_L,HIGH);
+      digitalWrite(DIR_L,LOW); //DOES NOT MATTER
     }
   }
 }
@@ -212,7 +212,7 @@ void Rspd(int spd)
     else
     {
       ledcWrite(PWM_R, 0);
-      digitalWrite(DIR_R,HIGH);
+      digitalWrite(DIR_R,LOW); //DOES NOT MATTER
     }
   }
 
@@ -232,7 +232,7 @@ void Rspd(int spd)
     else
     {
       ledcWrite(PWM_R, 0);
-      digitalWrite(DIR_R,HIGH);
+      digitalWrite(DIR_R,LOW); //DOES NOT MATTER
     }
   }
 }
